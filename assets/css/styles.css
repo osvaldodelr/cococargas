@@ -144,15 +144,13 @@
 #get-a-quote {
   background-color: #5fad00;
 }
-/* =======================
-    CENTRAL LOGO SECTION
-==========================*/
 .logo-central {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  background-color: #f8f9fa; /* o el color de fondo que desees */
+  height: 100vh; /* Hace que ocupe toda la pantalla */
+  padding-top: 80px; /* Espacio para evitar que lo tape el header fijo */
+  background-color: #f8f9fa; /* Opcional: un fondo claro */
 }
 
 .logo-central img {
