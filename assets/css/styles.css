@@ -144,3 +144,19 @@
 #get-a-quote {
   background-color: #5fad00;
 }
+/* =======================
+    CENTRAL LOGO SECTION
+==========================*/
+.logo-central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f8f9fa; /* o el color de fondo que desees */
+}
+
+.logo-central img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
