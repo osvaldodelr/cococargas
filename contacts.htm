@@ -1,224 +1,335 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11346694440"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) - Conservado de tu código original -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11346694440"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11346694440');
+    </script>
 
-  gtag('config', 'AW-11346694440');
-</script>
+    <!-- Meta Tags de tu sitio original -->
+    <meta name="description" content="El más rápido servicio de transporte, mudanza y acarreos en todo el país. Soluciones seguras y eficientes para tu mudanza o el transporte de tu mercancía.">
+    <meta name="keywords" content="camion, camiones, barato, telefono, cotiza ahora, transporte, mudanza, acarreos, carga, servicio, Santo Domingo Norte, República Dominicana">
 
+    <title>Transporte, mudanza y acarreos | Floppy Carga</title>
 
-  <meta name="description" content="El más rápido servicio de transporte, mudanza y acarreos en todo el país...">
-  <meta name="keywords" content="camion, camiones, barato, gratis, telefono, pedido en linea, cotiza ahora, transporte, mudanza, acarreos, carga, servicio, Santo Domingo Norte">
+    <!-- Favicons (asegúrate de que las rutas sean correctas) -->
+    <link rel="icon" href="assets/img/favicon.png" sizes="32x32" type="image/png">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <title>Transporte, mudanza y acarreos | Floppy Carga</title>
-
-  <!-- Favicons -->
-  <link rel="icon" href="assets/img/favicon.png" sizes="32x32" type="image/png">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Inter&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/styles.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQWGW69Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
- <!-- ======= Header ======= -->
-<header id="header" class="header d-flex align-items-center fixed-top">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-    <a href="index.html" class="logo d-flex align-items-center">
-      <img src="assets/img/apple-touch-icon.jpg" alt="Floppy Carga" style="height: 60px;">
-      <h1>Floppy Carga</h1>
-    </a>
-  </div>
-</header>
-
-<!-- ======= Logo Central ======= -->
-<section class="logo-central">
-  <img src="assets/img/apple-touch-icon.jpg" alt="Floppy Carga">
-</section>
-
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="contacts.html">Contactos</a></li>
-          <li><a id="get-a-quote" class="get-a-quote" href="https://wa.me/18094401376" target="_blank"> <i class="space bi bi-whatsapp" style="font-size: 1.5rem;"></i> ¡Cotizar ahora!</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- End Header -->
-
-  <main id="main">
-
+    <!-- Scripts de Estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7)), url('https://images.unsplash.com/photo-1587613864429-3a1c4b8c9a7a?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilos para el modal */
+        .modal-overlay {
+            transition: opacity 0.3s ease;
+        }
+        .modal-container {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
 
-    <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 text-center">
-              <h2>Floppy Carga</h2>
-              <p>El más rápido servicio de transporte, mudanza y acarreos en todo el pais...</p>
+    <!-- Google Tag Manager (noscript) - Conservado de tu código original -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQWGW69Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div>
+                <a href="#" class="flex items-center">
+                    <img src="http://googleusercontent.com/file_content/1" alt="Logo FloppyCarga" class="h-14">
+                </a>
             </div>
-          </div>
-        </div>
-      </div>
-      <nav>
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inicio</li>
-          </ol>
-        </div>
-      </nav>
-    </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#servicios" class="text-gray-600 hover:text-blue-700">Servicios</a>
+                <a href="#nosotros" class="text-gray-600 hover:text-blue-700">Nosotros</a>
+                <a href="#contacto" class="text-gray-600 hover:text-blue-700">Contacto</a>
+            </div>
+            <div>
+                <a href="https://wa.me/18094401376" target="_blank" class="cta-button bg-green-500 text-white font-bold py-2 px-5 rounded-lg hover:bg-green-600 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943s-.182-.15-.38-.25z"/></svg>
+                    Cotizar Ahora
+                </a>
+            </div>
+        </nav>
+    </header>
 
-  
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Expertos en Mudanzas y Transporte de Carga</h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">El más rápido servicio de transporte, mudanza y acarreos en todo el país.</p>
+                <a href="#contacto" class="cta-button bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-blue-700">
+                    Obtén una Cotización Gratis
+                </a>
+            </div>
+        </section>
 
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row gy-4">
-          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-            <a href="contacts.html" class="glightbox play-btn"></a>
-          </div>
-          <div class="col-lg-6 content order-last order-lg-first">
-            <h3>Nosotros</h3>
-            <p><strong>Floppy Cargas</strong>, con más de una década de experiencia, es un referente en transporte de carga y logística...</p>
-            <ul>
-              <li data-aos="fade-up" data-aos-delay="100">
-                <i class="bi bi-diagram-3"></i>
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nuestros Servicios Especializados</h2>
+                    <p class="text-gray-600 mt-2">Todo lo que necesitas para moverte sin preocupaciones.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-lg transition-shadow text-center">
+                        <div class="text-blue-600 inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Servicios de Mudanza</h3>
+                        <p class="text-gray-600">Nos encargamos de tu mudanza residencial u oficina. Embalaje, transporte y montaje con el máximo cuidado.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-lg transition-shadow text-center">
+                        <div class="text-blue-600 inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2l3 3v6a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 10-4 0 2 2 0 004 0z" /></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Transporte de Carga</h3>
+                        <p class="text-gray-600">Transporte seguro y puntual para todo tipo de mercancías, paquetería y carga pesada a nivel nacional.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-lg transition-shadow text-center">
+                         <div class="text-blue-600 inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Almacenamiento y Bodega</h3>
+                        <p class="text-gray-600">Soluciones de almacenamiento seguras para tus pertenencias o mercancía por el tiempo que necesites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="nosotros" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1974&auto=format&fit=crop" alt="Camión de FloppyCarga" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre Nosotros</h2>
+                        <p class="text-gray-600 mb-4"><strong>Floppy Carga</strong>, con más de una década de experiencia, es un referente en transporte de carga y logística. Ya sea que te estés mudando de casa o necesites transportar mercancía valiosa, manejamos cada servicio con el máximo profesionalismo.</p>
+                        <div class="mt-6 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                            <h4 class="font-bold text-lg text-gray-800">Nuestra Misión</h4>
+                            <p class="text-gray-700 mt-2">Brindar soluciones logísticas confiables para empresas y particulares, con enfoque en calidad y eficiencia para garantizar un servicio impecable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Contacto y Planificador IA -->
+        <section id="contacto" class="py-20 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Contacta y Planifica tu Mudanza</h2>
+                    <p class="text-gray-600 mt-2">Completa el formulario y usa nuestro asistente de IA para crear un plan a tu medida.</p>
+                </div>
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <form id="contact-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" id="name" placeholder="Tu Nombre" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="email" id="email" placeholder="Correo Electrónico" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="text" id="subject" placeholder="Asunto (Ej: Cotización de mudanza)" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <textarea id="description" placeholder="Describe tu necesidad (ej: mudanza de 3 habs, transporte de mercancía, origen, destino, etc.)" rows="5" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <div class="text-center space-y-4">
+                            <button type="submit" class="cta-button w-full md:w-auto bg-blue-600 text-white font-bold py-3 px-12 rounded-lg text-lg hover:bg-blue-700">
+                                Enviar Mensaje
+                            </button>
+                            <button type="button" id="generate-checklist" class="cta-button w-full md:w-auto bg-orange-500 text-white font-bold py-3 px-12 rounded-lg text-lg hover:bg-orange-600">
+                                ✨ Generar Checklist de Mudanza
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal para el Checklist -->
+        <div id="checklist-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50">
+            <div class="modal-container bg-white w-full max-w-2xl rounded-lg shadow-lg p-8 transform scale-95">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold text-gray-800">Tu Checklist Personalizado</h3>
+                    <button id="close-modal" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+                </div>
+                <div id="checklist-result" class="text-gray-700 space-y-4 max-h-96 overflow-y-auto">
+                    <!-- El contenido del checklist se insertará aquí -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- Columna 1: Info Empresa -->
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Floppy Carga</h3>
+                    <p class="text-gray-300">El más rápido servicio de transporte, mudanza y acarreos en todo el país.</p>
+                     <div class="flex justify-center md:justify-start mt-4 space-x-4">
+                        <a href="https://wa.me/18094401376" target="_blank" class="text-gray-300 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 16 16"><use xlink:href="#whatsapp-icon"/></svg></a>
+                        <a href="https://facebook.com/floppycarga" target="_blank" class="text-gray-300 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0 0 3.603 0 8.049c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+                        <a href="https://instagram.com/floppycarga" target="_blank" class="text-gray-300 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm0 1.442c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.598.92c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598c-.28-.28-.453-.546-.598-.92-.11-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.231s.008-2.389.046-3.232c.036-.78.166-1.204.276-1.486a2.5 2.5 0 0 1 .598-.92c.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.843-.038 1.096-.047 3.232-.047zM8 3.882a4.102 4.102 0 1 0 0 8.204 4.102 4.102 0 0 0 0-8.204zm0 6.762a2.662 2.662 0 1 1 0-5.324 2.662 2.662 0 0 1 0 5.324zM12.502 3.22a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92z"/></svg></a>
+                    </div>
+                </div>
+                <!-- Columna 2: Enlaces -->
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Enlaces Útiles</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Inicio</a></li>
+                        <li><a href="#servicios" class="text-gray-300 hover:text-white">Servicios</a></li>
+                        <li><a href="#contacto" class="text-gray-300 hover:text-white">Contacto</a></li>
+                        <li><a href="politica-de-privacidad.html" class="text-gray-300 hover:text-white">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 3: Contacto -->
                 <div>
-                  <h5>Misión</h5>
-                  <p>Brindar soluciones logísticas confiables para empresas y particulares, con enfoque en calidad y eficiencia.</p>
+                    <h3 class="text-xl font-bold mb-4">Información de Contacto</h3>
+                    <p class="text-gray-300">
+                        Av. Jacobo Majluta,<br>
+                        Santo Domingo Norte,<br>
+                        República Dominicana.
+                    </p>
+                    <p class="mt-4 text-gray-300">
+                        <strong>Teléfono:</strong> <a href="tel:+18094401376" class="hover:text-white">+1 (809) 440-1376</a>
+                    </p>
+                    <p class="text-gray-300">
+                        <strong>Email:</strong> <a href="mailto:floppycarga@gmail.com" class="hover:text-white">floppycarga@gmail.com</a>
+                    </p>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <div class="slides-1 swiper" data-aos="fade-up">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/menPerfil400x400.jpg" class="testimonial-img" alt="">
-                <h3>Diego Nuñez</h3>
-                <h4>CEO &amp; Director General</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Coordinamos operaciones con precisión y eficiencia. Garantizamos calidad y rapidez en cada entrega.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
             </div>
-          </div>
-          <div class="swiper-pagination"></div>
+            <div class="mt-12 border-t border-blue-800 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Floppy Carga. Todos los derechos reservados.</p>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-  </main>
+    <!-- SVG Icon Definition for WhatsApp -->
+    <svg width="0" height="0" style="position:absolute">
+      <symbol id="whatsapp-icon" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943s-.182-.15-.38-.25z"/>
+      </symbol>
+    </svg>
+    
+    <script>
+        // --- Lógica para el Planificador de Mudanza con Gemini API ---
 
-  <!-- ======= Footer ======= -->
-<footer id="footer" class="footer">
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-5 col-md-12 footer-info">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <span>Floppy Carga</span>
-        </a>
-        <p>El más rápido servicio de transporte, mudanza y acarreos en todo el país...</p>
-        <div class="social-links d-flex mt-4">
-          <a href="https://wa.me/18094401376" target="_blank" class="whatsapp"><i class="bi bi-whatsapp fs-1"></i></a>
-          <a href="https://facebook.com/floppycarga" target="_blank" class="facebook"><i class="bi bi-facebook fs-1"></i></a>
-          <a href="https://instagram.com/floppycarga" target="_blank" class="instagram mx-2"><i class="bi bi-instagram fs-1"></i></a>
-          <a href="tel:+18094401376" target="_blank" class="telephone-fill"><i class="bi bi-telephone-fill fs-1"></i></a>
-        </div>
-      </div>
-      <div class="col-lg-7 col-md-12 footer-links">
-        <h4>Enlaces útiles</h4>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="contacts.html">Contacto</a></li>
-          <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li> <!-- Aquí está el enlace -->
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+        const generateButton = document.getElementById('generate-checklist');
+        const modal = document.getElementById('checklist-modal');
+        const closeModalButton = document.getElementById('close-modal');
+        const checklistResult = document.getElementById('checklist-result');
+        const descriptionInput = document.getElementById('description');
 
+        // Abre el modal
+        const openModal = () => {
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            setTimeout(() => {
+                modal.querySelector('.modal-overlay').classList.remove('opacity-0');
+                modal.querySelector('.modal-container').classList.remove('scale-95');
+            }, 10);
+        };
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contactos</h4>
-          <p>
-            Av. Jacobo Majluta,<br>
-            Santo Domingo Norte,<br>
-            República Dominicana.<br><br>
-            <strong>Phone:</strong> <a href="tel:+18094401376">+1 (809) 440-1376</a><br>
-            <strong>WhatsApp:</strong> <a href="https://wa.me/18094401376">+1 (809) 440-1376</a><br>
-            <strong>Email:</strong> floppycarga@gmail.com<br>
-          </p>
-        </div>
-      </div>
-    </div>
+        // Cierra el modal
+        const closeModal = () => {
+            modal.querySelector('.modal-overlay').classList.add('opacity-0');
+            modal.querySelector('.modal-container').classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }, 300);
+        };
 
-    <div class="container mt-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Floppy Carga</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer>
+        generateButton.addEventListener('click', async () => {
+            const userDescription = descriptionInput.value;
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+            if (!userDescription.trim()) {
+                alert('Por favor, describe tu necesidad de mudanza o carga primero.');
+                return;
+            }
 
-  <div id="preloader"></div>
+            // Mostrar indicador de carga y abrir modal
+            checklistResult.innerHTML = `
+                <div class="flex flex-col items-center justify-center p-8">
+                    <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600"></div>
+                    <p class="mt-4 text-gray-600">Generando tu plan personalizado...</p>
+                </div>`;
+            openModal();
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/js/main.js"></script>
+            // --- Llamada a la API de Gemini ---
+            // FIX: Removed invalid backslash character `\` before template literal backticks ``.
+            const prompt = `Eres un asistente experto en logística para una empresa de mudanzas llamada Floppy Carga. Un cliente ha descrito su necesidad: "${userDescription}". Basado en esto, crea un checklist detallado y útil en formato HTML. Organiza las tareas por categorías (Ej: "4 Semanas Antes", "1 Semana Antes", "Día de la Mudanza", "Para la Carga"). Usa títulos (<h3>) para las categorías y listas (<ul> y <li>) para las tareas. Sé muy práctico y da consejos útiles.`;
+            
+            const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+            const payload = { contents: chatHistory };
+            const apiKey = ""; // La clave se gestiona automáticamente en el entorno de Canvas
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Error de la API: ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    // Limpiar y mostrar el resultado
+                    checklistResult.innerHTML = text.replace(/\\n/g, '<br>');
+                } else {
+                    checklistResult.innerHTML = '<p class="text-red-500">No se pudo generar el checklist. Por favor, intenta de nuevo.</p>';
+                }
+            } catch (error) {
+                console.error('Error al llamar a la API de Gemini:', error);
+                checklistResult.innerHTML = '<p class="text-red-500">Ocurrió un error al conectar con el asistente. Por favor, revisa tu conexión o intenta más tarde.</p>';
+            }
+        });
+
+        // Event Listeners para el modal
+        closeModalButton.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+    </script>
 </body>
-
 </html>
